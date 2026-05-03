@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - GZL Power Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">  
+   
+</head>
+<body>
+    <style>
+        a:link, a:visited, a:hover, a:active {
+            color: black; 
+            text-decoration: none; 
+        }
+    </style>
+
+    <header class="hero-section">
+         
+        <a href ="index.html"><img src = "images/GZL_Logo_no_bg.png" alt="GZL Logo" class="header-logo"></a>
+        <ul class="ul_herosection">
+           <a href = "index.html" class="animated-link">Home</a>
+           <a href = "about us.html" class="animated-link">About Us</a>
+           <a href = "services.html" class="animated-link">Services</a>
+           <a href = "projects.html" class="animated-link">Projects</a>
+           <a href = "contact us.html" class="animated-link">Contact Us</a>
+        </ul>
+    
+     <!-- Mobile hamburger nav -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact us.html">Contact Us</a>
+    </nav>
+    <script>
+        const btn = document.getElementById('hamburger');
+        const nav = document.getElementById('mobileNav');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+        // Close nav when a link is clicked
+        nav.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                btn.classList.remove('open');
+                nav.classList.remove('open');
+            });
+        });
+    </script><br><br>
+
+    </header>
+
+    
+    <img src = "images/homepage_display.png" alt ="Homepage Display" class= "displayimage_homepage">
+    
+    <h1 class="home-page-title">HELLO, FUTURE CLIENT!</h1>
+    <p class = "home-intro-text">
+            Welcome to <strong>GZL Power Solutions</strong> — your trusted partner in reliable, efficient, and innovative energy solutions. At GZL Power Solutions, we are committed to powering homes, businesses, and industries with cutting-edge technology and dependable service. Whether you need sustainable energy systems, electrical solutions, or power management expertise, our team is here to deliver excellence every step of the way.
+            We believe that power is more than just electricity — it’s the foundation of progress, productivity, and growth. That’s why we focus on providing solutions that are not only efficient, but also future-ready and environmentally responsible.
+            Explore our services and discover how GZL Power Solutions can energize your world.
+
+    </p>
+    
+<div class="grid-container">
+         <a href= "services.html" class = "a-href">
+            <section class="services-card">
+                <h1 style="color: white">SERVICES</h1>
+                <p>Get to know more about our professional solar, CCTV, and smart technology services designed to power and protect your space.</p>
+            </section>
+         </a>  
+         <a href= "projects.html" class = "a-href">
+            <section class="projects-card">
+                <h1 style="color: white">PROJECTS</h1>
+                <p>From residential rooftops to business establishments, here's a look at the work we've done and the clients we've had the privilege of serving.</p>
+            </section>
+         </a>
+    </div>
+
+    <br><br>
+    
+    <h4 style="margin-left: 50px">Want to know more about us?
+    <a href = "about us.html"><button class = "button_homepage"><strong>Go to About Us</strong></button></a>
+    </h4>
+   
+    <footer id="contact" class = "footer">
+
+        <ul class = "footer-links">
+            <hr style="background-color: black"><br><br>
+            <a href="https://www.facebook.com/gzlpowers" class = "social-link" target="_blank" style="color: gray">
+                <img src = "images/facebook_logo.png" alt="Facebook Logo">
+                 GZL Power Solutions 
+            </a>
+            <br>
+            <a href="contact us.html" style="color: gray">✆ Contact Us</a>
+            <br>
+            <img src = "images/GZL_Logo_no_bg.png" alt="GZL Logo" class="footer-logo">
+
+        </ul>
+        <p style="color:rgb(123, 120, 120); margin-top: auto">© 2026 GZL Power Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
